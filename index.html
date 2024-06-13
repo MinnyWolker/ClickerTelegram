@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            font-size: 24px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clicker Game</h1>
+    <p>Score: <span id="score">0</span></p>
+    <button onclick="incrementScore()">Click me!</button>
+
+    <script>
+        let score = 0;
+
+        function incrementScore() {
+            score++;
+            document.getElementById("score").innerText = score;
+        }
+
+        // Telegram Web Apps SDK
+        window.Telegram.WebApp.ready();
+    </script>
+</body>
+</html>
